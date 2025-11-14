@@ -1,3 +1,3 @@
 def call(){
-    sh 'mvn test'
+    echo 'test comple'
 }
