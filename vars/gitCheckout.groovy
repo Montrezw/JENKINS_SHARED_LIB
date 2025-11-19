@@ -1,8 +1,6 @@
 def call(Map stageParams) {
- 
-    checkout([
-        $class: 'GitSCM',
-        branches: [[name:  stageParams.branch ]],
-        userRemoteConfigs: [[ url: stageParams.url ]]
-    ])
+    gitCheckout(
+        branch: "main",
+        url: "https://github.com/Montrezw/mrdevops_java_app.git"
+    )
   }
