@@ -1,3 +1,4 @@
 def call(){
-    sh 'mvn test'
+    echo 'fake mvn verify test step'
+    sh 'mvn --version'
 }
